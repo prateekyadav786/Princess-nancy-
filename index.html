@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A surprise is waiting for you, Nancy 💗</title>
+<meta name="description" content="Someone made something special, only for you. Tap to open.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A surprise is waiting for you, Nancy 💗">
+<meta property="og:description" content="Someone made something special, only for you. Tap to open.">
+<meta property="og:url" content="https://prateekyadav786.github.io/Princess-nancy-/">
+<meta property="og:image" content="https://prateekyadav786.github.io/Princess-nancy-/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://prateekyadav786.github.io/Princess-nancy-/og-image.png">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#e3c9ff">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg1:#ffd6ec;--bg2:#e3c9ff;--card:#fff7fb;--ink:#6b3a8c;--soft:#9a6bb8;
+  --pink:#ff5fae;--pink2:#c23fd6;--line:#f3b9dc;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg1:#3a1c4a;--bg2:#241338;--card:#3b2250;--ink:#f6dcff;--soft:#d3a8ea;
+    --pink:#ff7bbd;--pink2:#c86cf0;--line:#6a3f86;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg1:#3a1c4a;--bg2:#241338;--card:#3b2250;--ink:#f6dcff;--soft:#d3a8ea;
+  --pink:#ff7bbd;--pink2:#c86cf0;--line:#6a3f86;color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{height:100%}
+body{margin:0;height:100%;font-family:'Quicksand',system-ui,sans-serif;color:var(--ink);
+  background:linear-gradient(160deg,var(--bg1),var(--bg2));overflow:hidden}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.hearts span{position:absolute;bottom:-40px;opacity:.5;animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.app{position:relative;height:100%;display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:16px}
+.stage{flex:1;display:flex;align-items:center;justify-content:center;min-height:0}
+.screen{width:100%;animation:pop .45s ease both;text-align:center}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.97)}}
+.hand{font-family:'Caveat',cursive,serif;font-weight:700}
+.card{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:22px;
+  box-shadow:0 10px 30px rgba(194,63,214,.18)}
+h1,h2{margin:0 0 8px;font-family:'Caveat',cursive,serif;font-size:2.4rem;color:var(--pink2)}
+p{margin:8px 0;line-height:1.5}
+.big{font-family:'Caveat',cursive,serif;font-size:1.7rem;line-height:1.35}
+.env{cursor:pointer;position:relative;padding:34px 22px}
+.env .seal{font-size:2.6rem;display:block;animation:beat 1.2s infinite}
+@keyframes beat{50%{transform:scale(1.18)}}
+.tap{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--soft);margin-top:14px}
+.flips{display:grid;gap:12px}
+.flip{perspective:800px;height:92px;cursor:pointer}
+.flip .in{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.flip.on .in{transform:rotateY(180deg)}
+.flip .f,.flip .b{position:absolute;inset:0;border-radius:18px;display:flex;align-items:center;justify-content:center;
+  padding:10px 14px;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:2px solid var(--line)}
+.flip .f{background:var(--card);font-size:1.6rem}
+.flip .b{background:linear-gradient(135deg,var(--pink),var(--pink2));color:#fff;transform:rotateY(180deg);
+  font-family:'Caveat',cursive,serif;font-size:1.5rem;line-height:1.2}
+.cert{border:3px double var(--pink2);text-align:left}
+.cert ul{list-style:none;padding:0;margin:10px 0}
+.cert li{margin:8px 0;font-size:.95rem}
+.sign{display:flex;justify-content:space-around;margin-top:14px;font-family:'Caveat',cursive,serif;font-size:1.5rem}
+.sign small{display:block;font-family:'Quicksand',sans-serif;font-size:.65rem;color:var(--soft);border-top:1px solid var(--line);margin-top:2px}
+.letter{text-align:left;max-height:62vh;overflow-y:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;padding-top:8px}
+.btn{border:0;border-radius:999px;padding:12px 22px;font:700 1rem 'Quicksand',sans-serif;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,var(--pink),var(--pink2));box-shadow:0 6px 16px rgba(194,63,214,.3)}
+.btn.ghost{background:var(--card);color:var(--ink);border:2px solid var(--line);box-shadow:none}
+.btn[disabled]{opacity:.35;cursor:default}
+.dots{display:flex;gap:6px}
+.dots i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.dots i.on{background:var(--pink);transform:scale(1.3)}
+.flips{max-height:58vh;overflow-y:auto;padding:2px}
+.flip{height:84px}
+.ow{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ow button{border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:16px;padding:14px 8px;font:700 .85rem 'Quicksand',sans-serif;cursor:pointer}
+.ow button.on{background:linear-gradient(135deg,var(--pink),var(--pink2));color:#fff;border-color:transparent}
+.msg{margin-top:12px;min-height:110px;font-size:1.45rem;line-height:1.3}
+.letter p{opacity:0;animation:fade .9s ease forwards}
+@keyframes fade{to{opacity:1}}
+.burst{position:fixed;pointer-events:none;font-size:22px;animation:fly 1.6s ease-out forwards;z-index:9}
+@keyframes fly{to{transform:translate(var(--x),var(--y)) rotate(40deg);opacity:0}}
+.sm{font-size:.8rem;color:var(--soft)}
+.env.opening{animation:openenv .9s ease forwards}
+@keyframes openenv{40%{transform:scale(1.06) rotate(-2deg)}to{transform:scale(.85) translateY(-30px);opacity:0}}
+.nav.hide{visibility:hidden}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+<div class="app">
+  <div class="stage"><div class="screen" id="screen"></div></div>
+  <div class="nav hide" id="nav">
+    <button class="btn ghost" id="back">← Back</button>
+    <div class="dots" id="dots"></div>
+    <button class="btn" id="next">Next →</button>
+  </div>
+</div>
+<script>
+// ====== EDIT THESE ======
+var HER="Nancy", FROM="Prateek", WITNESS="the cat";
+// ========================
+function card(e,t){return '<div class="flip"><div class="in"><div class="f">'+e+'</div><div class="b">'+t+'</div></div></div>';}
+var OW=[["😴 Tired","You’ve been strong for so long. Resting isn’t quitting. Drink some water, close your eyes, and know someone is quietly proud of you."],
+["😔 Sad","It’s okay to not be okay. You don’t have to explain it to anyone. Even the moon has dark phases, and it still lights up the whole night."],
+["🥺 Doubting","That voice in your head is lying. Someone out here sees you clearly, and what he sees is kind, brave and worth every good thing."],
+["🥰 Happy","Then I’m smiling too, wherever I am. Keep shining, you were made for this."]];
+var sel=-1;
+var letter=["Dear "+HER+",","I rewrote this so many times, and every version felt too small for you. So I’ll just be honest.",
+"Some people we meet and forget by evening. And then there’s you. Somehow my mind goes to you first, without even asking me.",
+"You’re not precious to me because you’re perfect. You’re precious because of who you are: the way you care, the way you make a normal day feel softer, the way you’re real in a world that’s so often pretending.",
+"I won’t promise big things I can’t keep. But I can promise small, real ones. I’ll always be honest with you. I’ll respect your space. And I’ll be glad when you’re happy, even on days it has nothing to do with me.",
+"If the world ever asks too much from you, please remember: you don’t have to perform for anyone here. You can just be you. That version is already more than enough.",
+"Whatever you decide to do with these words, nothing changes about how much I admire you.",
+"Thank you for being exactly who you are. 💗","Always,<br><span style=\"color:var(--pink2)\">"+FROM+"</span>"];
+var screens=[
+function(){return '<div class="card"><div style="font-size:3rem">🤫</div><h1>Shh… a secret</h1><p class="big">Someone made something special, only for '+HER+'.</p><button class="btn" id="open" style="margin-top:10px">Open Your Surprise ✨</button></div>';},
+function(){return '<div class="card env" id="env"><span class="seal">💗</span><h1 style="margin-top:10px">Hey '+HER+'!</h1><p class="big">I made something just for you. Take your time with it.</p><div class="tap">tap anywhere to open</div></div>';},
+function(){return '<div class="card"><h2>Hi '+HER+' 🌸</h2><p class="big">Today is all about you. I built you a tiny corner of the internet, with things I never say out loud.</p><p class="big">Read slowly. Smile a little. 🙂</p></div>';},
+function(){return '<h2>Why you’re special</h2><div class="flips">'+card('🐻 The way you care','You notice people. That’s rarer than you think.')+card('🌷 Your smile','It can quietly fix a bad day. Mine, at least.')+card('🐱 Your heart','Soft, but never weak. That’s real strength.')+card('✨ Being you','You never have to be anyone else for me.')+card('💌 Just because','Some reasons don’t fit in words.')+'</div><p class="sm">tap each one to flip</p>';},
+function(){var m=sel<0?'<span class="sm">tap one when you need it 💞</span>':OW[sel][1];return '<h2>Open when…</h2><div class="ow">'+OW.map(function(o,k){return '<button data-k="'+k+'" class="'+(k===sel?'on':'')+'">'+o[0]+'</button>';}).join('')+'</div><div class="card msg hand">'+m+'</div>';},
+function(){return '<div class="card cert"><h2 style="text-align:center">Royal Certificate 👑</h2><p style="text-align:center;margin-top:0">This certifies that <b>'+HER+'</b> is hereby entitled to:</p><ul><li>⭐ <b>Be celebrated.</b> The party never really ends.</li><li>⭐ <b>Be treated like royalty.</b> Extra hugs, and the good fries. No exceptions.</li><li>⭐ <b>Be heard.</b> Always, without being rushed.</li><li>⭐ <b>Shine always.</b> Crown optional, sparkle mandatory.</li><li>⭐ <b>Terms:</b> valid forever, non-refundable, non-transferable.</li></ul><div class="sign"><div>'+FROM+'<small>issued by</small></div><div>'+WITNESS+'<small>royal witness</small></div></div></div>';},
+function(){return '<div class="card letter hand" style="font-size:1.4rem;line-height:1.38">'+letter.map(function(t,k){return '<p style="animation-delay:'+(k*1.1)+'s">'+t+'</p>';}).join('')+'</div>';},
+function(){return '<div class="card"><h2>One last thing</h2><p class="big">Press the heart.</p><button class="btn" id="pr" style="font-size:2rem;padding:14px 26px">💗</button><p class="big" id="fin" style="margin-top:16px;opacity:0;transition:opacity 1s">'+HER+', you are precious. Never forget it.</p><button class="btn ghost" id="re" style="margin-top:8px;opacity:0;transition:opacity 1s">Read again ↺</button></div>';}
+];
+var i=0,scr=document.getElementById('screen'),back=document.getElementById('back'),next=document.getElementById('next'),dots=document.getElementById('dots');
+dots.innerHTML=screens.map(function(){return '<i></i>';}).join('');
+function boom(){var em=['💗','💖','🌸','✨','💜','🎀'];for(var k=0;k<30;k++){var b=document.createElement('span');b.className='burst';b.textContent=em[k%6];b.style.left='50%';b.style.top='45%';var a=Math.random()*6.28,d=100+Math.random()*190;b.style.setProperty('--x',Math.cos(a)*d+'px');b.style.setProperty('--y',Math.sin(a)*d+'px');document.body.appendChild(b);setTimeout(function(x){x.remove();},1700,b);}}
+function show(n,keep){i=n;if(!keep){scr.style.animation='none';void scr.offsetWidth;scr.style.animation='';}
+scr.innerHTML=screens[i]();back.disabled=i<=2;document.getElementById('nav').className='nav'+(i<2?' hide':'');next.disabled=i===screens.length-1;next.textContent=i===screens.length-2?'Last one →':'Next →';
+Array.prototype.forEach.call(dots.children,function(d,k){d.className=k===i?'on':'';});
+var o=document.getElementById('open');if(o)o.onclick=function(){show(1);};
+var e=document.getElementById('env');if(e)e.onclick=function(){if(e.dataset.d)return;e.dataset.d=1;e.querySelector('.seal').textContent='💌';e.classList.add('opening');setTimeout(function(){show(2);},900);};
+Array.prototype.forEach.call(scr.querySelectorAll('.flip'),function(f){f.onclick=function(){f.classList.toggle('on');};});
+Array.prototype.forEach.call(scr.querySelectorAll('.ow button'),function(b){b.onclick=function(){sel=+b.dataset.k;show(4,true);};});
+var p=document.getElementById('pr');if(p)p.onclick=function(){boom();document.getElementById('fin').style.opacity=1;document.getElementById('re').style.opacity=1;};
+var r=document.getElementById('re');if(r)r.onclick=function(){sel=-1;show(0);};}
+back.onclick=function(){if(i>0)show(i-1);};next.onclick=function(){if(i<screens.length-1)show(i+1);};
+var hs=document.getElementById('hearts'),em=['💗','💖','🌸','✨','💜'];
+for(var k=0;k<14;k++){var s=document.createElement('span');s.textContent=em[k%5];s.style.left=(Math.random()*100)+'%';s.style.fontSize=(14+Math.random()*18)+'px';s.style.animationDuration=(9+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*14)+'s';hs.appendChild(s);}
+show(0);
+</script>
+</body>
+</html>
